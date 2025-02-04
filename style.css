@@ -1,0 +1,221 @@
+.page {
+    width: 1920px;
+    height: 2100px;
+    margin:0 auto;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px 245px 245px;
+    grid-template-rows: 245px 245px 245px 245px 245px 245px;
+    grid-template-areas:"computer computer computer computer computer computer"
+    "computer computer computer computer computer computer"
+    "book clock shoes2 shoes2 gifts gifts"
+    "shoes shoes shoes2 shoes2 laptop laptop"
+    "year year year year women chemistry"
+    "year year year year women balls";
+    gap: 60px;
+    width: 1770px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+:root {
+    --1: #fff;
+    --2: #3670c7;
+    --3: #2d2d2d;
+    --4: #8f8f8f;
+    --5: #525252;
+    --6: #e8e8e8;
+
+    --font-family: "Lato", sans-serif;
+    --second-family: "Open Sans", sans-serif;
+}
+
+.container {
+    padding: 100px 30px;
+
+}
+
+.hidden-text {
+    visibility: hidden;
+    font-size: 0;
+}
+
+.search {
+    border-radius: 30px;
+    width: 757px;
+    background: #efefef;
+    display: flex;
+    justify-content: stretch;
+}
+
+.search__field {
+    flex-grow: 1;
+    font-family: var(--font-family);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--4);
+
+    border: none;
+    background-color: transparent;
+    padding: 15px 0 18px 40px;
+
+    outline: none;
+}
+
+.search__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 30px;
+    width: 101px;
+    height: 54px;
+    cursor: pointer;  
+
+    outline: none;
+
+    background: var(--2);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 1770px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 123px;
+}
+
+.menu__call {
+    background-image: url("./img/btn.svg");
+    border-radius: 10px;
+    width: 150px;
+    height: 54px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+
+.item-container {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    position: relative;
+    left: 50px;
+    gap: 70px;
+    margin: 0;
+}
+
+.item1 {
+    list-style: none;
+    cursor: pointer;
+}
+
+.item2 {
+    list-style: none;
+    cursor: pointer;
+}
+
+.item3 {
+    list-style: none;
+    cursor: pointer;
+}
+
+.computer {
+    grid-area: computer ;
+    transition: transform 200ms linear;
+    &:hover {
+        transform: scale(110%);
+    }
+}
+
+.book {
+    grid-area: book ;
+    transition: transform 200ms linear;
+    &:hover {
+        transform: scale(110%);
+    }
+}
+
+.clock {
+    grid-area: clock ;
+    transition: transform 200ms linear;
+    &:hover {
+        transform: scale(110%);
+    }
+}
+
+.shoes {
+    grid-area: shoes ;
+    transition: transform 200ms linear;
+    &:hover {
+        transform: scale(110%);
+    }
+}   
+
+.shoes2 {
+    grid-area: shoes2 ;
+    transition: transform 200ms linear;
+    &:hover {
+        transform: scale(110%);
+    }
+}
+
+.gifts {
+    grid-area: gifts ;
+    transition: transform 200ms linear;
+    &:hover {
+        transform: scale(110%);
+    }
+}
+
+.laptop {
+    grid-area: laptop ;
+    transition: transform 200ms linear;
+    &:hover {
+        transform: scale(110%);
+    }
+}
+
+.year {
+    grid-area: year ;
+    transition: transform 200ms linear;
+    &:hover {
+        transform: scale(110%);
+    }
+}
+
+.women {
+    grid-area: women ;
+    transition: transform 200ms linear;
+    &:hover {
+        transform: scale(110%);
+    }
+}
+
+.chemistry {
+    grid-area: chemistry ;
+    transition: transform 200ms linear;
+    &:hover {
+        transform: scale(110%);
+    }
+}
+
+.balls {
+    grid-area: balls;
+    transition: transform 200ms linear;
+    &:hover {
+        transform: scale(110%);
+    }
+}
